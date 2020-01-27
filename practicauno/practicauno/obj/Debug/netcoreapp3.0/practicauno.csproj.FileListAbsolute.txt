@@ -1,0 +1,11 @@
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\obj\Debug\netcoreapp3.0\practicauno.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\obj\Debug\netcoreapp3.0\practicauno.AssemblyInfoInputs.cache
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\obj\Debug\netcoreapp3.0\practicauno.AssemblyInfo.cs
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\bin\Debug\netcoreapp3.0\practicauno.exe
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\bin\Debug\netcoreapp3.0\practicauno.deps.json
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\bin\Debug\netcoreapp3.0\practicauno.runtimeconfig.json
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\bin\Debug\netcoreapp3.0\practicauno.runtimeconfig.dev.json
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\bin\Debug\netcoreapp3.0\practicauno.dll
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\bin\Debug\netcoreapp3.0\practicauno.pdb
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\obj\Debug\netcoreapp3.0\practicauno.dll
+C:\Users\alumno\Desktop\169078\practicauno\practicauno\obj\Debug\netcoreapp3.0\practicauno.pdb
