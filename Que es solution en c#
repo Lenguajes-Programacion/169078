@@ -1,0 +1,14 @@
+Una solución es un espacio de trabajo que combina múltiples proyectos, que generalmente están relacionados entre sí. 
+La construcción es muy útil en situaciones en las que es necesario compartir algún código entre múltiples proyectos.
+
+Por ejemplo, si está desarrollando un sitio web con un componente separado del lado del servidor, podría segregarlo en 
+varios proyectos relacionados:
+
+    Un proyecto que contiene interfaces comunes, produciendo una DLL
+    Un proyecto que contiene la definición de la base de datos, produciendo un script de implementación RDBMS
+    Un proyecto que contiene la implementación de API del lado del servidor, produciendo un ejecutable
+    Un proyecto de sitio web, que produce un script de implementación de IIS
+
+Estos cuatro proyectos están conectados entre sí. Colocarlos en una única solución le permite acceder a partes individuales, 
+mientras aprovecha la indexación común que Visual Studio hace para simplificar las búsquedas de uso y ayudar con la 
+refactorización.
