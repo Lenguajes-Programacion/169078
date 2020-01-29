@@ -1,0 +1,40 @@
+Todo lenguaje estable un conjunto de palabras reservadas que deberán ser tomadas como prohibidas para la declaración 
+de cualquier tipo de dato definido por el programador. Aquí la lista de palabras reservadas en C#.
+
+abstract 	enum 	long 	stackalloc
+
+as 	event 	namespace 	static
+
+base 	explicit 	new 	string
+
+bool 	extern 	null 	struct
+
+break 	false 	object 	switch
+
+byte 	finally 	operator 	this
+
+case 	Fixed 	out 	throw
+
+catch 	float 	override 	true
+
+char 	for 	params 	try
+
+checked 	foreach 	private 	typeof
+
+class 	goto 	protected 	uint
+
+const 	if 	public 	ulong
+
+continue 	implicit 	readonly 	unchecked
+
+decimal 	in 	ref 	unsafe
+
+default 	int 	return 	ushort
+
+delegate 	interface 	sbyte 	using
+
+do 	internal 	sealed 	virtual
+
+double 	is 	short 	void
+
+else 	lock 	sizeof 	while
