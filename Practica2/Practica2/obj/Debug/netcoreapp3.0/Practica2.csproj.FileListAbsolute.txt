@@ -9,3 +9,5 @@ C:\Users\alumno\Desktop\169078\Practica2\Practica2\obj\Debug\netcoreapp3.0\Pract
 C:\Users\alumno\Desktop\169078\Practica2\Practica2\obj\Debug\netcoreapp3.0\Practica2.AssemblyInfo.cs
 C:\Users\alumno\Desktop\169078\Practica2\Practica2\obj\Debug\netcoreapp3.0\Practica2.dll
 C:\Users\alumno\Desktop\169078\Practica2\Practica2\obj\Debug\netcoreapp3.0\Practica2.pdb
+C:\Users\alumno\Desktop\169078\Practica2\Practica2\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\alumno\Desktop\169078\Practica2\Practica2\obj\Debug\netcoreapp3.0\Practica2.csproj.CopyComplete

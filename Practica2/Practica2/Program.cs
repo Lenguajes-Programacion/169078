@@ -1,51 +1,161 @@
 ﻿using System;
 namespace calculadora1
 {
-    class Program
+
+    class calculadora
     {
-        static void Main(string[] args)
+        public float digito1, digito2, resultado, resultado2 = 0;  //declaracion de variables
+        public bool op = false;
+
+        //Funcion Principal
+
+        static void Main()
         {
-            string operadorES;
-            int Suma, Resta, Multiplicacion, Variable1, Variable2;
-            Console.WriteLine("Realiza una operacion");
-            Console.WriteLine("Escribe el primer digito");
-            Variable1 = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Escribe un operador");
-            operadorES = Console.ReadLine();
-            Console.WriteLine("Escribe el segundo digito");
-            Variable2 = Int32.Parse(Console.ReadLine());
-
-            Suma = Variable1 + Variable2;
-            Resta = Variable1 - Variable2;
-            Multiplicacion = Variable1 * Variable2;
-            double Division = (Variable1 / Variable2);
-
-
-            switch (operadorES)
+            calculadora opera = new calculadora();
+            string operador;
+            do
             {
-                case "+" :
-                    Console.WriteLine("El resultado de tu suma es: " + Suma);
-                    break;
+                Console.WriteLine("Que operacion desea realizar?");
+                Console.WriteLine("suma-------------- +");
+                Console.WriteLine("resta------------- -");
+                Console.WriteLine("multiplicacion---- *");
+                Console.WriteLine("division---------- /");
+                Console.WriteLine("salir------------- e");
+                Console.WriteLine("memoria ----------- m");
+                operador = (Console.ReadLine());
+                switch (operador)
+                {
+                    case "+":
+                        opera.Suma();//llamar las funciones
+                        break;
+                    case "-":
+                        opera.Resta();
+                        break;
+                    case "*":
+                        opera.Multi();
+                        break;
+                    case "/":
+                        opera.Divi();
+                        break;
+                    case "e":
+                        Console.Clear();
+                        Console.WriteLine("adios:)", System.Environment.NewLine);
+                        break;
+                    case "m":
+                        Memoria papa = new Memoria();
+                        papa.LeerMemoria();
+                        break;
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("Ingresa un operador valido", System.Environment.NewLine);
+                        break;
+                }
+            } while (operador != "e");
 
-                case "-":
-                    Console.WriteLine("El resultado de tu resta es: " + Resta);
-                    break;
 
-                case "*":
-                    Console.WriteLine("El resultado de tu multiplicacion es: " + Multiplicacion);
-                    break;
-
-                case "/":
-                    Console.WriteLine("El resultado de tu division es: " + Division);
-                    break;
-
-                default:
-                    Console.WriteLine("Intentalo de nuevo " + operadorES);
-                    break;
-
+        }
+        //Funcion para sumar----------------------------------------------------------------------------
+        public float Suma()
+        {
+            if (op == true)
+            {
+                Console.WriteLine("Ingresa el nuevo digito: ");
+                digito2 = Int32.Parse(Console.ReadLine());
+                resultado2 = resultado + digito2;
+                resultado = resultado2;  //sustituir el valor de un valor en otro
 
             }
-            Console.ReadLine();
+            else
+            {
+                Console.WriteLine("Primer Numero: ");
+                digito1 = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Segundo Numero: ");
+                digito2 = Int32.Parse(Console.ReadLine());
+                resultado = digito1 + digito2;
+                op = true;
+
+            }
+            Console.WriteLine("Resultado = : " + resultado);
+
+            return resultado;
+        }
+
+        //Funcion para restar--------------------------------------------------------------------------
+        public float Resta()
+        {
+            if (op == true)
+            {
+                Console.WriteLine("Ingresa el nuevo digito: ");
+                digito2 = Int32.Parse(Console.ReadLine());
+                resultado2 = resultado - digito2;
+                resultado = resultado2;
+
+            }
+            else
+            {
+                Console.WriteLine("Digito 1: ");
+                digito1 = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Digito 2: ");
+                digito2 = Int32.Parse(Console.ReadLine());
+                resultado = digito1 - digito2;
+                op = true;
+
+            }
+            Console.WriteLine("Resultado = : " + resultado);
+
+            return resultado;
+        }
+        //Funcion para multiplicar--------------------------------------------------------------------------
+        public float Multi()
+        {
+            if (op == true)
+            {
+                Console.WriteLine("Ingresa el nuevo digito: ");
+                digito2 = Int32.Parse(Console.ReadLine());
+                resultado2 = resultado * digito2;
+                resultado = resultado2;
+
+            }
+            else
+            {
+
+                Console.WriteLine("Digito1 : ");
+                digito1 = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Digito 2: ");
+                digito2 = Int32.Parse(Console.ReadLine());
+                resultado = digito1 * digito2;
+                op = true;
+
+            }
+            Console.WriteLine("Resultado = : " + resultado);
+
+            return resultado;
+        }
+        //Funcion para dividir--------------------------------------------------------------------------
+        public float Divi()
+        {
+            if (op == true)
+            {
+                Console.WriteLine("Ingresa el nuevo digito: ");
+                digito2 = Int32.Parse(Console.ReadLine());
+                resultado2 = resultado / digito2;
+                resultado = resultado2;
+
+            }
+            else
+            {
+
+                Console.WriteLine("Digito 1: ");
+                digito1 = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Digito 2: ");
+                digito2 = Int32.Parse(Console.ReadLine());
+                resultado = digito1 / digito2;
+                op = true;
+
+            }
+            Console.WriteLine("Resultado = : " + resultado);
+
+            return resultado;
         }
     }
 }

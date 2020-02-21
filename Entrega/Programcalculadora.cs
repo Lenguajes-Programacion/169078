@@ -21,6 +21,7 @@ namespace calculadora1
                 Console.WriteLine("multiplicacion---- *");
                 Console.WriteLine("division---------- /");
                 Console.WriteLine("salir------------- e");
+                Console.WriteLine("memoria ----------- m");
                 operador = (Console.ReadLine());
                 switch (operador)
                 {
@@ -40,6 +41,9 @@ namespace calculadora1
                         Console.Clear();
                         Console.WriteLine("adios:)", System.Environment.NewLine);
                         break;
+                    case "m":
+                        Memoria papa = new Memoria();
+                        papa.LeerMetodo;
                     default:
                         Console.Clear();
                         Console.WriteLine("Ingresa un operador valido", System.Environment.NewLine);

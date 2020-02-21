@@ -1,0 +1,24 @@
+{
+  "key": "value",
+  "arreglo": [
+    {
+      "operacion": "5+5",
+      "resultado": "10"
+    },
+    "value"
+  ],
+
+  "2020-02-21": {
+    "operacion": "5+5",
+    "resultado": 10
+  },
+  "2020-02-22": {
+    "operacion": "5+5",
+    "resultado": 10
+  },
+
+  "2020-02-23": {
+    "operacion": "5+5",
+    "resultado": 10
+  }
+}
