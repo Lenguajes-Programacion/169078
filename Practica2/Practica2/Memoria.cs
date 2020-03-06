@@ -29,6 +29,28 @@ namespace calculadora1
             }
            
         }
+        public void arreglo()
+        {
+            string [] colores = {"rojo", "blanco", "morado"};
+                Array.Reverse(colores);
+                Array.ForEach(colores, (item)=> {
+                    Console.WriteLine(item);
+                    });
+            String color = Array.Find(colores, (item) => {
+                return item.Length > 4;
+                    });
+            Console.WriteLine(color);
+            Console.WriteLine("accede a tus colores y separalaos con comas(,)");
+            string coloruser = Console.ReadLine();
+            string[] newColors = coloruser.Split(',');
+            Console.WriteLine(newColors);
+        }
+        public void multidimensional()
+        {
+            int [,] array =  new int [4,2];
+            Console.WriteLine(array);
+        }
+    
     }
 }
 
