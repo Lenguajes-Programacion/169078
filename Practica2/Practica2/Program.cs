@@ -9,7 +9,7 @@ namespace calculadora1
 
         //Funcion Principal
 
-        static void Main()
+        static void calculadora()
         {
             calculadora opera = new calculadora();
             string operador;
